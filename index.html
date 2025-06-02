@@ -49,7 +49,6 @@
     </div>
 
 
-
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const videos = document.querySelectorAll(".scroll-video");
@@ -69,18 +68,17 @@
     });
     
         const wipeImage = document.querySelector(".wipe-up");
-        if (wipeImage) {
-            const imageObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        wipeImage.classList.add("animate");
-                    }
-                });
-            }, {
-                threshold: 0.5,
     
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    wipeImage.classList.add("animate");
+                }
             });
-            imageObserver.observe(wipeImage);
+        }, {
+            threshold: 0.5
+        });
+        imageObserver.observe(wipeImage);
 });
 </script>
 </body>
