@@ -7,16 +7,26 @@ html, body {
     font-family: sans-serif;
 }
 
+/* Resizing of the sections */
+.content,
+.scroll-video-section,
+.image-section,
+.small-image-section,
+.button-section, {
+    padding: 2rem;
+    margin: 0 auto;
+}
+
 /* Background video container */
 .hero-section {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     overflow: hidden;
 }
 
 /* Video that fills the container*/
 .hero-section video {
-    width: 100%;
+    width: auto;
     height: auto;
     object-fit: contain;
     object-position: center;
@@ -25,7 +35,6 @@ html, body {
 
 /* Content scroller */
 .content {
-    min-height: 100vh;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -57,8 +66,7 @@ html, body {
 
 /* Making a clean design */
 .scroll-video-section video {
-    max-width: 50%;
-    width: 50%;
+    width: auto;
     height: auto;
     display: block;
     border-radius: 12px;
@@ -73,13 +81,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
 }
 
 .image-section img {
-    width: 40%;
+    width: auto;
     height: auto;
-    max-width: 100%;
 
 }
 
@@ -105,15 +111,13 @@ html, body {
 }
 
 .small-image {
-    max-width: auto;
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
 
 }
 .image {
-    max-width: auto;
-    width: 50%;
+    width: auto;
     height: auto;
     border-radius: 10px;
 
