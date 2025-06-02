@@ -56,30 +56,31 @@
         videos.forEach(video =>{
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    if (video.paused && video.currentTime === 0) {
+                if (entry.isIntersecting && video.paused && video.currentTime === 0) {
                         video.play();
                     }
                 }
             });
         }, {
             threshold: 0.5
+            rootMargin: "0px 0px -40% 0px"
         });
         observer.observe(video);
     });
     
         const wipeImage = document.querySelector(".wipe-up");
-    
-        const imageObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    wipeImage.classList.add("animate");
-                }
+        if (wipeImage) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        wipeImage.classList.add("animate");
+                    }
+                });
+            }, {
+                threshold: 0.5,
+                rootMargin: "0px 0px -40% 0px"
             });
-        }, {
-            threshold: 0.5
-        });
-        imageObserver.observe(wipeImage);
+            imageObserver.observe(wipeImage);
 });
 </script>
 </body>
