@@ -34,9 +34,6 @@ html, body {
 
 /* Content scroller */
 .content {
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
