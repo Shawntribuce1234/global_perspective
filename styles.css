@@ -11,8 +11,7 @@ html, body {
 .content,
 .scroll-video-section,
 .image-section,
-.small-image-section,
-.button-section, {
+.small-image-section {
     padding: 2rem;
     margin: 0 auto;
 }
