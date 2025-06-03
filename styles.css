@@ -20,8 +20,8 @@ html, body {
 
 /* Video that fills the container*/
 .hero-section video {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 50%;
     object-fit: cover;
     object-position: contain;
     display: block; 
