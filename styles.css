@@ -12,7 +12,7 @@ html, body {
 .scroll-video-section,
 .image-section,
 .small-image-section {
-    padding: 0.5rem;
+    padding: 0rem;
     margin: 0 auto;
 }
 
@@ -127,8 +127,8 @@ html, body {
 }
 
 .square-button {
-    width: 5px;
-    height: 5px;
+    width: 100px;
+    height: 50px;
     background-color: white;
     color: #808080;
     text-decoration: none;
