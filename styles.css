@@ -7,11 +7,21 @@ html, body {
     font-family: sans-serif;
 }
 
+
 /* Resizing of the sections */
+.content,
+.scroll-video-section,
+.image-section,
+.small-image-section {
+    padding: 0rem;
+    margin: 0 auto;
+}
+
 /* Background video container */
 .hero-section {
     width: 150%;
     height: auto;
+    align-items: center;
     overflow: hidden;
 }
 
