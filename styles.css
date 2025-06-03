@@ -22,8 +22,8 @@ html, body {
 .hero-section video {
     width: 80%;
     height: 50%;
-    object-fit: cover;
-    object-position: contain;
+    object-fit: contain;
+    object-position: center;
     display: block; 
 }
 
