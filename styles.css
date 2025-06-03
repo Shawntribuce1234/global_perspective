@@ -8,19 +8,12 @@ html, body {
 }
 
 
-/* Resizing of the sections */
-.content,
-.scroll-video-section,
-.image-section,
-.small-image-section {
-    padding: 0rem;
-    margin: 0 auto;
-}
+
 
 /* Background video container */
 .hero-section {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     position: relative;
     overflow: hidden;
 }
