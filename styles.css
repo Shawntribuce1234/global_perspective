@@ -12,7 +12,7 @@ html, body {
 .scroll-video-section,
 .image-section,
 .small-image-section {
-    padding: 2rem;
+    padding: 0;
     margin: 0 auto;
 }
 
